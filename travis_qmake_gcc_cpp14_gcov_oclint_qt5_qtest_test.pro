@@ -26,5 +26,5 @@ QMAKE_CXXFLAGS += -std=c++14
 QMAKE_CXXFLAGS += -Wno-unused-variable
 
 # gcov
-# QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-# LIBS += -lgcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
