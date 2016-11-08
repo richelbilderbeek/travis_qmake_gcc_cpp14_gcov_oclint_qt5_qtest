@@ -21,6 +21,6 @@ QMAKE_CXXFLAGS += -std=c++14
 # Thanks to Qt
 QMAKE_CXXFLAGS += -Wno-unused-variable
 
-# gcov is not needed in non-test program
-# QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-# LIBS += -lgcov
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
