@@ -15,7 +15,6 @@
 
 # Fortran module files
 *.mod
-*.smod
 
 # Compiled Static libraries
 *.lai
@@ -27,3 +26,12 @@
 *.exe
 *.out
 *.app
+
+# Misc
+*.pro.user
+Makefile
+moc_*
+ui_*
+qrc_*
+travis_qmake_gcc_cpp11_qt_qtest
+travis_qmake_gcc_cpp11_qt_qtest_test
