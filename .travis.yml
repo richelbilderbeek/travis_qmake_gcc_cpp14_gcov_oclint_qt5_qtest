@@ -28,12 +28,12 @@ before_script:
 
 script: 
   # Build test
-  - qmake -qt=qt5 travis_qmake_gcc_cpp14_oclint_qt5_qtest_test.pro
+  - qmake -qt=qt5 travis_qmake_gcc_cpp14_gcov_oclint_qt5_qtest_test.pro
   - make
   # Build normal
-  - qmake -qt=qt5 travis_qmake_gcc_cpp14_oclint_qt5_qtest.pro
+  - qmake -qt=qt5 travis_qmake_gcc_cpp14_gcov_oclint_qt5_qtest.pro
   - make
   # Run test
-  - ./travis_qmake_gcc_cpp14_oclint_qt5_qtest_test
+  - ./travis_qmake_gcc_cpp14_gcov_oclint_qt5_qtest_test
   # OCLint
   - ./do_oclint.sh
